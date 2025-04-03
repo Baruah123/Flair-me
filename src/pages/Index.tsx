@@ -19,7 +19,7 @@ const Index = () => {
       if (!welcomeShown) {
         const firstName = user.firstName || '';
         toast.success(
-          `Welcome ${firstName ? firstName : 'back'} to EventGo!`, 
+          `Welcome ${firstName ? firstName : 'back'} to FlairMyEvent!`, 
           { 
             description: "Discover the best event vendors and services.",
             duration: 5000
