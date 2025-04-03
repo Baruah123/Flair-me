@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from "react";
 import { Link, useLocation, NavLink } from "react-router-dom";
 import { useTheme } from "@/contexts/ThemeContext";
@@ -57,8 +56,12 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo & Brand */}
         <div className="flex items-center">
-          <Link to="/" onClick={handleNavigation} className="transition-opacity duration-300 hover:opacity-90">
-            <span className="text-xl font-bold">Event<span className="text-eventgo-teal">Go</span></span>
+          <Link to="/" onClick={handleNavigation} className="transition-all duration-300 hover:opacity-90 group">
+            <img 
+              src={theme === "light" ? "/fmelogodark.svg" : "/fmelogolight.png"} 
+              alt="EventGo Logo" 
+              className="h-10 w-auto transform transition-all duration-300 group-hover:scale-105"
+            />
           </Link>
         </div>
 

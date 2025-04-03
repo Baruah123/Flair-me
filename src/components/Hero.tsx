@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-block p-1.5 rounded-full bg-gradient-to-r from-white/20 to-white/5 backdrop-blur-md mb-6 shadow-lg shadow-black/20 animate-fade-in">
             <div className="bg-gradient-to-r from-primary/30 via-secondary/30 to-primary/30 rounded-full px-8 py-2.5 text-sm font-semibold text-white border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
-              The best events happen at EventGo
+              The best events happen at FlairMyEvent
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
