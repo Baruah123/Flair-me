@@ -3,8 +3,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Sparkles, Calendar, Flame, User, Users } from "lucide-react";
-import profileImage from "@/image/profile.png";
 import heroVideo from "@/image/hell.mp4";
+import proVideo from "@/image/pro.mp4";
+import profilesImage from "@/image/profiles.jpeg";
 
 const About = () => {
   return (
@@ -73,13 +74,16 @@ const About = () => {
               </div>
               <div className="relative h-[500px] overflow-hidden rounded-2xl shadow-2xl group">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                <img 
-                  src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069" 
-                  alt="Event planning" 
+                <video
+                  src={proVideo}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                 />
                 <div className="absolute bottom-6 left-6 right-6 z-20">
-                  <p className="text-white/90 text-lg font-medium">Creating magical moments since 2018</p>
+                  <p className="text-white/90 text-lg font-medium">Creating magical moments since 2024</p>
                 </div>
               </div>
             </div>
@@ -208,7 +212,7 @@ const About = () => {
                 <div className="md:col-span-2">
                   <div className="aspect-[3/4] overflow-hidden rounded-lg shadow-lg">
                     <img 
-                      src={profileImage} 
+                      src={profilesImage} 
                       alt="Reeshab Srivastava" 
                       className="w-full h-full object-cover"
                     />
@@ -232,17 +236,45 @@ const About = () => {
                     <p className="text-sm font-medium mb-3">Connect with Reeshab:</p>
                     <div className="flex space-x-4">
                       {[
-                        { name: "Twitter", href: "#", icon: "twitter" },
-                        { name: "LinkedIn", href: "#", icon: "linkedin" },
-                        { name: "Instagram", href: "#", icon: "instagram" }
+                        {
+                          name: "Twitter",
+                          href: "https://x.com/reeshab1504icl1?s=21&t=zc60KcKzjY_FhTlwBHQ_eQ",
+                          icon: (
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                          )
+                        },
+                        {
+                          name: "Facebook",
+                          href: "https://www.facebook.com/share/19C23HkwdN/?mibextid=wwXIfr",
+                          icon: (
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                          )
+                        },
+                        {
+                          name: "Instagram",
+                          href: "https://www.instagram.com/i_reeshab?igsh=MXF3amZvNWR1cXc3cw==",
+                          icon: (
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                          )
+                        }
                       ].map((social, index) => (
                         <a 
                           key={index}
                           href={social.href} 
                           className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-muted hover:bg-primary/10 transition-colors"
                           aria-label={social.name}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
-                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-foreground"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                          {social.icon}
                         </a>
                       ))}
                     </div>

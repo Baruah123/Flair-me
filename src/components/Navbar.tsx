@@ -117,7 +117,7 @@ const Navbar = () => {
             }
             onClick={handleNavigation}
           >
-            About
+            About Us
           </NavLink>
           <NavLink 
             to="/contact" 

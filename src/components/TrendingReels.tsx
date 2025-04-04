@@ -91,8 +91,8 @@ const reels: Reel[] = [
   {
     id: 1,
     userId: 1,
-    videoUrl: "https://www.youtube.com/watch?v=qC0vDKVPCrw",
-    thumbnail: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070",
+    videoUrl: "https://youtube.com/shorts/OeDkcWbEGd4?si=mZ8DDBy2OPQ8Vy4X",
+    thumbnail: "",
     caption: "Experience the magic of our latest night at Club Events! The energy was absolutely incredible. #eventplanning #nightlife #dj #clubbing",
     likes: 1241,
     comments: [
@@ -130,8 +130,8 @@ const reels: Reel[] = [
   {
     id: 2,
     userId: 2,
-    videoUrl: "https://www.youtube.com/watch?v=jNQXAC9IVRw",
-    thumbnail: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070",
+    videoUrl: "https://youtube.com/shorts/X5wlkWqdNf8?si=o6sY1hGZwsAxGJ_t",
+    thumbnail: "",
     caption: "When the beat drops and everyone goes wild! Tag a friend you'd bring to our next event. 🎧 #musicfestival #dj #electronicmusic",
     likes: 2743,
     comments: [
@@ -160,8 +160,8 @@ const reels: Reel[] = [
   {
     id: 3,
     userId: 3,
-    videoUrl: "https://www.youtube.com/watch?v=RK1K2bCg4J8",
-    thumbnail: "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2070",
+    videoUrl: "https://youtube.com/shorts/_4x_Nj1r9n4?si=PUILvke5uFaKqAHs",
+    thumbnail: "",
     caption: "Our signature hors d'oeuvres are a hit at every corporate event we cater! Book us for your next company gathering. #foodie #catering #corporateevents",
     likes: 883,
     comments: [
@@ -190,8 +190,8 @@ const reels: Reel[] = [
   {
     id: 4,
     userId: 4,
-    videoUrl: "https://www.youtube.com/watch?v=IUN664s7N-c",
-    thumbnail: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=2070",
+    videoUrl: "https://youtube.com/shorts/lW3LuO0AiwE?si=3AY6urIt-Yv8XTyI",
+    thumbnail: "",
     caption: "From concept to reality - this underwater themed party was amazing! See how we transformed this venue with lighting, props, and creative design. #eventdesign #themeparty #eventplanner",
     likes: 1567,
     comments: [

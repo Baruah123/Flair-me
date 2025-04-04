@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import heroVideo from "@/image/hell.mp4";
 
 const Hero = () => {
   return (
@@ -13,14 +14,7 @@ const Hero = () => {
           loop
           playsInline
         >
-          <source src="/src/image/hell.mp4" type="video/mp4" />
-          {/* Fallback to image if video fails */}
-          <div 
-            className="w-full h-full bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/lovable-uploads/bd38f08d-9571-4b14-873b-8475d3ce1577.png')",
-            }}
-          />
+          <source src={heroVideo}  type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
       </div>

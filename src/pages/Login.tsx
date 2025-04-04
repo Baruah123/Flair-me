@@ -61,7 +61,7 @@ const Login = () => {
         <div className="w-full max-w-md bg-card rounded-xl shadow-lg p-8 border border-border">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold">Welcome Back</h1>
-            <p className="text-muted-foreground mt-2">Sign in to your EventGo account</p>
+            <p className="text-muted-foreground mt-2">Sign in to your Flair-My-Event account</p>
           </div>
           
           <form onSubmit={handleSubmit} className="space-y-6">
